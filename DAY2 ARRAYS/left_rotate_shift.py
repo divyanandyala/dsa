@@ -40,6 +40,18 @@
 # print(arr)
 
 
+#better
+arr=[1,2,3,4,5,6,7,8,9,10]
+n=len(arr)
+d=2
+d=d%n
+temp=[]
+for i in range(d,n):
+    temp.append(arr[i])
+for i in range(d):
+    temp.append(arr[i])
+print(temp)
+
 #optimal
 
 def reverse(arr, start, end):
