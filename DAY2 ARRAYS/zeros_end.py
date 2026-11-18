@@ -7,3 +7,5 @@ zeroes=len(arr)-len(temp)
 for i in range(zeroes):
     temp.append(0)
 print(temp)
+
+
