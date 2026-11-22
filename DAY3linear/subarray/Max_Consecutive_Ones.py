@@ -28,3 +28,18 @@
 #     else:
 #         count=0
 # print(maxi)
+
+
+# optimal
+
+arr=[1,1,1,0,0]
+current=0
+longest=0
+for num in arr:
+    if num==1:
+        current+=1
+    else:
+        current=0
+    if current>longest:
+        longest=current
+print(longest)
