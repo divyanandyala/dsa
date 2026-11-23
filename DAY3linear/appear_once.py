@@ -16,19 +16,31 @@
 #         break
     
 
+# arr = [2, 3, 5, 4, 5, 3, 2]
+
+# frequency = {}
+
+# for num in arr:
+
+#     if num in frequency:
+#         frequency[num] += 1
+#     else:
+#         frequency[num] = 1
+
+# for num in frequency:
+
+#     if frequency[num] == 1:
+#         print("Number appears once:", num)
+#         break
+
+
+
+
 arr = [2, 3, 5, 4, 5, 3, 2]
 
-frequency = {}
+result = 0
 
 for num in arr:
+    result = result ^ num
 
-    if num in frequency:
-        frequency[num] += 1
-    else:
-        frequency[num] = 1
-
-for num in frequency:
-
-    if frequency[num] == 1:
-        print("Number appears once:", num)
-        break
+print("Number appears once:", result)
