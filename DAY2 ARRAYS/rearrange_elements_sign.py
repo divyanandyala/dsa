@@ -19,4 +19,16 @@
 # better
 
 
-
+arr=[1,-2,3,-4,5,-6]
+n=len(arr)
+pos=0
+neg=1
+result=[0]*n
+for num in arr:
+    if num>0:
+        result[pos]=num
+        pos+=2
+    else:
+        result[neg]=num
+        neg+=2
+print(result)
