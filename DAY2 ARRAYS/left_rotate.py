@@ -8,6 +8,25 @@
 
 # print(left_brute_force([1,2,3,4,5]))
 
+# arr = [10, 20, 30, 40]
+
+# temp = []
+
+# for i in range(1, len(arr)):
+#     temp.append(arr[i])
+
+# temp.append(arr[0])
+
+# print(temp)
+
+
+
+# arr = [10, 20, 30, 40]
+
+# arr = arr[1:] + arr[:1]
+
+# print(arr)
+
 
 
 
@@ -18,6 +37,8 @@
 #     return arr[1:] + [arr[0]]
 
 # print(left_rotate_better([1, 2, 3, 4, 5]))
+
+
 
 
 # def left_rotate_optimal(arr):
@@ -36,3 +57,15 @@
 #     return arr
 
 # print(left_rotate_optimal([1,2,3,4,5]))
+
+
+arr = [10, 20, 30, 40]
+
+first = arr[0]
+
+for i in range(len(arr) - 1):
+    arr[i] = arr[i + 1]
+
+arr[-1] = first
+
+print(arr)
